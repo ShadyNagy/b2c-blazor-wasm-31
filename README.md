@@ -1,7 +1,7 @@
 # Azure B2C Blazor WASM Working with 3.1
 
-## Secure an ASP.NET Core Blazor WebAssembly hosted app with Azure Active Directory B2C
-## Azure B2C not working in Blazor WASM (netstandard2.1) without the implicit grant so that is the solution
+### Secure an ASP.NET Core Blazor WebAssembly hosted app with Azure Active Directory B2C
+### Azure B2C not working in Blazor WASM (netstandard2.1) without the implicit grant so that is the solution
 
 1- Create the app [Microsoft Documentation](https://docs.microsoft.com/en-us/aspnet/core/blazor/security/webassembly/hosted-with-azure-active-directory-b2c?view=aspnetcore-3.1)
 
