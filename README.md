@@ -16,4 +16,25 @@ to
 <script src="AuthenticationService.js"></script>
 ```
 
+4- add this package to server
+    <PackageReference Include="Microsoft.Identity.Web" Version="1.1.0" />
+
+5- in WeatherForecastController 
+...
+using Microsoft.Identity.Web.Resource;
+ ...
+
+public class WeatherForecastController : ControllerBase
+{
+  ...
+  static readonly string[] scopeRequiredByApi = new string[] { "your scop name" };
+  ...
+  [HttpGet]
+  public IEnumerable<WeatherForecast> Get()
+  {
+    HttpContext.VerifyUserHasAnyAcceptedScope(scopeRequiredByApi);
+
+    ...
+  }
+
 4- Run your server.
