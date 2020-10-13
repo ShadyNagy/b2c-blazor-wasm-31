@@ -18,7 +18,7 @@ to
 
 4- add this package to server
 ```xml
-    <PackageReference Include="Microsoft.Identity.Web" Version="1.1.0" />
+<PackageReference Include="Microsoft.Identity.Web" Version="1.1.0" />
 ```
 5- in WeatherForecastController 
 ```csharp
